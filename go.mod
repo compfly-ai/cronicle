@@ -1,6 +1,6 @@
 module github.com/jshiv/cronicle
 
-go 1.26
+go 1.26.4
 
 require (
 	github.com/anthropics/anthropic-sdk-go v1.46.0
@@ -31,6 +31,8 @@ require (
 	modernc.org/sqlite v1.50.0
 )
 
+require github.com/coder/websocket v1.8.15 // indirect
+
 require (
 	github.com/Microsoft/go-winio v0.6.2 // indirect
 	github.com/ProtonMail/go-crypto v1.4.1 // indirect
@@ -55,6 +57,7 @@ require (
 	github.com/buger/jsonparser v1.1.2 // indirect
 	github.com/cheekybits/is v0.0.0-20150225183255-68e9c0620927 // indirect
 	github.com/cloudflare/circl v1.6.3 // indirect
+	github.com/compfly-ai/flyedge/flyedge-go v0.0.0-00010101000000-000000000000
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/go-git/gcfg/v2 v2.0.2 // indirect
@@ -105,3 +108,5 @@ require (
 )
 
 replace github.com/anthropics/anthropic-sdk-go => github.com/jshiv/anthropic-sdk-go v1.46.1-0.20260602022625-c3415d621638
+
+replace github.com/compfly-ai/flyedge/flyedge-go => ./flyedge-go
