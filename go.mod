@@ -8,6 +8,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.27.27
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.101.0
 	github.com/aws/smithy-go v1.25.1
+	github.com/compfly-ai/flyedge/flyedge-go v0.0.0-20260723180938-d2007db45173
 	github.com/fatih/color v1.19.0
 	github.com/fsnotify/fsnotify v1.10.1
 	github.com/gernest/kemi v0.0.0-20160708162426-04d6c23628c2
@@ -57,7 +58,6 @@ require (
 	github.com/buger/jsonparser v1.1.2 // indirect
 	github.com/cheekybits/is v0.0.0-20150225183255-68e9c0620927 // indirect
 	github.com/cloudflare/circl v1.6.3 // indirect
-	github.com/compfly-ai/flyedge/flyedge-go v0.0.0-00010101000000-000000000000
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/go-git/gcfg/v2 v2.0.2 // indirect
@@ -108,5 +108,3 @@ require (
 )
 
 replace github.com/anthropics/anthropic-sdk-go => github.com/jshiv/anthropic-sdk-go v1.46.1-0.20260602022625-c3415d621638
-
-replace github.com/compfly-ai/flyedge/flyedge-go => ./flyedge-go
