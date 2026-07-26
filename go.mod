@@ -1,6 +1,6 @@
 module github.com/jshiv/cronicle
 
-go 1.26
+go 1.26.4
 
 require (
 	github.com/anthropics/anthropic-sdk-go v1.46.0
@@ -8,6 +8,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.27.27
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.101.0
 	github.com/aws/smithy-go v1.25.1
+	github.com/compfly-ai/flyedge/flyedge-go v0.0.0-20260723180938-d2007db45173
 	github.com/fatih/color v1.19.0
 	github.com/fsnotify/fsnotify v1.10.1
 	github.com/gernest/kemi v0.0.0-20160708162426-04d6c23628c2
@@ -30,6 +31,8 @@ require (
 	gopkg.in/yaml.v3 v3.0.1
 	modernc.org/sqlite v1.50.0
 )
+
+require github.com/coder/websocket v1.8.15 // indirect
 
 require (
 	github.com/Microsoft/go-winio v0.6.2 // indirect

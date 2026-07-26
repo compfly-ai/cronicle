@@ -160,6 +160,15 @@ func Run(ctx context.Context, cfg Config) (Result, error) {
 	if cfg.APIKey != "" {
 		opts = append(opts, option.WithAPIKey(cfg.APIKey))
 	}
+	// CompFly (flyedge) monitoring: opt-in via env, no-op when unconfigured.
+	feOpt, feClose, err := flyedgeOption()
+	if err != nil {
+		return res, fmt.Errorf("flyedge: %w", err)
+	}
+	defer feClose()
+	if feOpt != nil {
+		opts = append(opts, feOpt)
+	}
 	client := anthropic.NewClient(opts...)
 
 	toolMap := make(map[string]Tool, len(cfg.Tools))
